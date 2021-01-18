@@ -103,18 +103,19 @@ box {
     overflow: hidden;
 }
 
-.navbar li {
+.navbar-item {
     float: left;
 }
 
-.navbar li a {
+.navbar-item-link {
     display: block;
     color: #fffff8;
     text-align: center;
     padding: 15px 15px;
     text-decoration: none;
+    
 }
 
-.navbar li a:hover {
+.navbar-item-link:hover {
     background-color: #111;
 }
