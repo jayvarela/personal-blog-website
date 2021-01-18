@@ -1,0 +1,92 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, fr);
+    grid-template-rows: 100px 600px 200px 600px 600px 100px;
+    grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "main main main main main main sd sd"
+        "nws nws nws nws nws nws nws nws"
+        "tp tp tp tp tp tp tp tp"
+        "ab ab ab ab ab ab ab ab"
+        "ft ft ft ft ft ft ft ft";
+}
+
+.header {
+    grid-area: hd;
+    display: flex;
+    border: 1px solid red;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    border: 1px solid red;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: main;
+}
+
+.sidebar {
+    display: flex;
+    border: 1px solid red;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: sd;
+}
+
+.newsletter {
+    display: flex;
+    border: 1px solid red;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: nws;
+}
+
+.topics {
+    display: flex;
+    border: 1px solid red;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: tp;
+}
+
+.about {
+    display: flex;
+    border: 1px solid red;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: ab;
+}
+
+.footer {
+    display: flex;
+    border: 1px solid red;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: ft;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar-item {
+    float: left;
+}
+
+.navbar-item-link {
+    display: block;
+    color: #fffff8;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    
+}
+
+.navbar-item-link:hover {
+    background-color: #111;
+}
