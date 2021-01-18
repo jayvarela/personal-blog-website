@@ -23,24 +23,26 @@ body {
 .container {
     display: grid;
     grid-template-columns: repeat(3, fr);
-    grid-template-rows: 150px 600px 600px 600px 100px;
+    grid-template-rows: 100px 600px 200px 600px 600px 100px;
     grid-template-areas:
         "hd hd hd hd hd hd hd hd"
         "main main main main main main sd sd"
-        "ab ab ab ab ab ab ab ab"
+        "nws nws nws nws nws nws nws nws"
         "tp tp tp tp tp tp tp tp"
+        "ab ab ab ab ab ab ab ab"
         "ft ft ft ft ft ft ft ft";
 }
 
 .box {
     display: flex;
-    align-items: center;
-    justify-content: center;
     border: 1px solid red;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #header {
     grid-area: hd;
+    justify-content: flex-end;
 }
 
 #main {
@@ -51,14 +53,41 @@ body {
     grid-area: sd;
 }
 
-#about {
-    grid-area: ab;
+#newsletter {
+    grid-area: nws;
 }
 
 #topics {
     grid-area: tp;
 }
 
+#about {
+    grid-area: ab;
+}
+
 #footer {
     grid-area: ft;
+}
+
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#navbar li {
+    float: left;
+}
+
+#navbar li a {
+    display: block;
+    color: #fffff8;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+
+#navbar li a:hover {
+    background-color: #111;
 }
