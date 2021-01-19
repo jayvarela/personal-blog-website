@@ -4,22 +4,38 @@
     grid-template-rows: 100px fr 100px;
     grid-template-areas:
         "hd hd hd hd hd hd hd hd"
-        "main main main main main main sd sd"
+        "main main main main main main main sd"
         "ft ft ft ft ft ft ft ft";
 }
 
 .header {
     grid-area: hd;
+    display: flex;
+    border: 1px solid red;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .main {
     grid-area: main;
+    display: flex;
+    border: 1px solid red;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .sidebar {
     grid-area: sd;
+    display: flex;
+    border: 1px solid red;
+    justify-content:space-around;
+    align-items: center;
 }
 
 .footer {
     grid-area: ft;
+    display: flex;
+    border: 1px solid red;
+    justify-content: center;
+    align-items: center;
 }
