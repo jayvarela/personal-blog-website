@@ -22,7 +22,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(3, fr);
+    grid-template-columns: repeat(2, fr);
     grid-template-rows: 100px 600px 200px 600px 600px 100px;
     grid-template-areas:
         "hd hd hd hd hd hd hd hd"
@@ -44,9 +44,12 @@ body {
 .main {
     display: flex;
     border: 1px solid red;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     grid-area: main;
+    background-image: url(/img/github.jpg);
+    background-size: cover;
+    flex-direction: column;
 }
 
 .sidebar {
@@ -106,9 +109,15 @@ body {
     text-align: center;
     padding: 15px 15px;
     text-decoration: none;
-    
+
 }
 
 .navbar-item-link:hover {
     background-color: #111;
+}
+
+.card-title {
+    text-align: center;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.6);
 }
