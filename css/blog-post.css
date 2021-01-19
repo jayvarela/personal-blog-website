@@ -1,7 +1,29 @@
+html {
+    font-size: 100%;
+    /*reader can adjust font size themselves*/
+    box-sizing: border-box;
+    /*element padding does not add width*/
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.3;
+    margin: 0px;
+    padding: 0px;
+    background-color: #444;
+    color: #fffff8;
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(2, fr);
-    grid-template-rows: 100px fr 100px;
+    grid-template-rows: 100px 800px 100px;
     grid-template-areas:
         "hd hd hd hd hd hd hd hd"
         "main main main main main main main sd"
@@ -38,4 +60,28 @@
     border: 1px solid red;
     justify-content: center;
     align-items: center;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar-item {
+    float: left;
+}
+
+.navbar-item-link {
+    display: block;
+    color: #fffff8;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    
+}
+
+.navbar-item-link:hover {
+    background-color: #111;
 }
